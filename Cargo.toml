@@ -1,0 +1,34 @@
+[package]
+name = "rust_learning"
+version = "0.1.0"
+edition = "2021"
+description = "我的Rust学习项目"
+authors = ["Desperado1001"]
+
+[dependencies]
+# 将来可能需要添加依赖
+
+# 可执行文件配置
+[[bin]]
+name = "hello_world"
+path = "basics/01_hello_world.rs"
+
+[[bin]]
+name = "variables"
+path = "basics/02_variables.rs"
+
+[[bin]]
+name = "control_flow"
+path = "basics/03_control_flow.rs"
+
+[[bin]]
+name = "functions"
+path = "basics/04_functions.rs"
+
+[[bin]]
+name = "calculator"
+path = "examples/01_simple_calculator.rs"
+
+[[bin]]
+name = "student_management"
+path = "examples/02_student_management.rs"
