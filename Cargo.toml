@@ -26,9 +26,17 @@ name = "functions"
 path = "basics/04_functions.rs"
 
 [[bin]]
+name = "ownership"
+path = "basics/05_ownership.rs"
+
+[[bin]]
 name = "calculator"
 path = "examples/01_simple_calculator.rs"
 
 [[bin]]
 name = "student_management"
 path = "examples/02_student_management.rs"
+
+[[bin]]
+name = "text_analyzer"
+path = "examples/03_text_analyzer.rs"
