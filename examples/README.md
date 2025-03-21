@@ -18,6 +18,15 @@
    - 实现了完整的 CRUD（创建、读取、更新、删除）操作
    - 通过用户交互展示了函数组织和代码复用的最佳实践
 
+3. **文本分析器** (`03_text_analyzer.rs`)
+   - 文本统计和分析工具
+   - 深入展示 Rust 所有权系统的应用
+   - 使用字符串切片（&str）和 String 类型
+   - 通过引用传递数据，避免不必要的所有权转移
+   - 展示集合类型（HashMap, Vec）的使用
+   - 演示字符串处理和文本分析的常见操作
+   - 使用迭代器和函数式编程方法处理数据
+
 ## 运行示例
 
 你可以使用 `rustc` 直接编译和运行这些示例：
@@ -26,10 +35,12 @@
 # 编译
 rustc examples/01_simple_calculator.rs
 rustc examples/02_student_management.rs
+rustc examples/03_text_analyzer.rs
 
 # 运行
 ./01_simple_calculator
 ./02_student_management
+./03_text_analyzer
 ```
 
 或者，你可以使用 Cargo 运行它们。项目根目录的 `Cargo.toml` 文件中已经配置了这些示例：
@@ -40,6 +51,9 @@ cargo run --bin calculator
 
 # 运行学生管理系统示例
 cargo run --bin student_management
+
+# 运行文本分析器示例
+cargo run --bin text_analyzer
 ```
 
 ## 学习目标
@@ -52,6 +66,7 @@ cargo run --bin student_management
 - 见识不同 Rust 功能的实际使用场景
 - 理解结构体和方法如何协同工作构建复杂系统
 - 掌握如何在实际应用中使用 Rust 的所有权和借用系统
+- 学习字符串处理和文本分析的技巧
 
 每个示例都有详细的注释，解释代码的功能和使用的 Rust 特性。建议先阅读基础部分的内容，再研究这些示例。
 
@@ -69,3 +84,10 @@ cargo run --bin student_management
    - 实现高级搜索和筛选功能
    - 添加课程管理功能
    - 增加数据验证和错误处理
+
+3. **文本分析器**
+   - 实现从文件读取文本的功能
+   - 添加更多文本统计指标（如句子数量、阅读难度等）
+   - 实现文本相似度比较功能
+   - 添加可视化统计结果的功能
+   - 扩展为支持多种文件格式（如PDF、Word等）
