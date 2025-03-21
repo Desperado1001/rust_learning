@@ -10,6 +10,14 @@
    - 使用 `match`、`loop` 和函数组织代码
    - 演示 `Result` 类型进行错误处理
 
+2. **学生管理系统** (`02_student_management.rs`)
+   - 完整的学生信息管理命令行应用
+   - 演示结构体、方法和函数的综合应用
+   - 展示如何使用 `impl` 块为结构体实现方法
+   - 使用 HashMap 存储数据并进行管理
+   - 实现了完整的 CRUD（创建、读取、更新、删除）操作
+   - 通过用户交互展示了函数组织和代码复用的最佳实践
+
 ## 运行示例
 
 你可以使用 `rustc` 直接编译和运行这些示例：
@@ -17,23 +25,21 @@
 ```bash
 # 编译
 rustc examples/01_simple_calculator.rs
+rustc examples/02_student_management.rs
 
 # 运行
 ./01_simple_calculator
+./02_student_management
 ```
 
-或者，你可以使用 Cargo 运行它们。在项目根目录的 `Cargo.toml` 文件中添加：
-
-```toml
-[[bin]]
-name = "calculator"
-path = "examples/01_simple_calculator.rs"
-```
-
-然后运行：
+或者，你可以使用 Cargo 运行它们。项目根目录的 `Cargo.toml` 文件中已经配置了这些示例：
 
 ```bash
+# 运行计算器示例
 cargo run --bin calculator
+
+# 运行学生管理系统示例
+cargo run --bin student_management
 ```
 
 ## 学习目标
@@ -44,5 +50,22 @@ cargo run --bin calculator
 - 学习常见的代码组织和项目结构模式
 - 练习错误处理和用户输入处理
 - 见识不同 Rust 功能的实际使用场景
+- 理解结构体和方法如何协同工作构建复杂系统
+- 掌握如何在实际应用中使用 Rust 的所有权和借用系统
 
 每个示例都有详细的注释，解释代码的功能和使用的 Rust 特性。建议先阅读基础部分的内容，再研究这些示例。
+
+## 进阶练习
+
+对于每个示例，你可以尝试以下进阶练习来加深理解：
+
+1. **简易计算器**
+   - 添加更多数学运算（如幂运算、平方根等）
+   - 实现操作历史记录功能
+   - 添加变量存储功能
+
+2. **学生管理系统**
+   - 添加数据持久化功能（保存到文件）
+   - 实现高级搜索和筛选功能
+   - 添加课程管理功能
+   - 增加数据验证和错误处理
